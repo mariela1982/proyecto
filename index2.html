@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    
+        <header class="encabezado">
+            <form action="#">
+                <div class="imagen">
+
+                    <img id="imagen" src="placeholder.png" alt="Imagen de perfil">
+                    <input type="file" accept="image/*" id="input-imagen" style="display: none;">
+                    <label class="imagen" for="input-imagen">Seleccionar imagen</label>
+                </div>
+            <div class="datosDerecha1">
+                <h1><input type="text" name="nombre" size="50" placeholder="ingrese Nombre y apellido"></h1>
+                <h2><input type="text" name="edad" size="50" placeholder="ingrese su edad -ej. 39 años"></h2>
+            </div> 
+            <div class="datosDerecha2">
+                <h3 class="titulos"> SOBRE MI </h3>
+                <input type="textarea" name="descripcion"  placeholder="escriba una brebe descripcion de su persona"> 
+            </div>  
+            <div class="datosIzquierda">
+    
+                <i class="fa-solid fa-house"></i><input type="text" name="direccion" size="50" placeholder="ingrese Direccion y localidad" required>
+                <i class="fa-solid fa-phone"></i><input type="text" name="telefono" size="15" placeholder="Ingrese su numero de Telefono" required>
+                
+                <i class="fa-solid fa-envelope"></i><input type="email" id="email" name="email" placeholder="ingrese su email">
+
+                
+            </div> 
+
+            </form>
+           
+            
+           
+                
+        </header>
+        <main>
+            <section>
+                <h3 class="titulos">EXPERIENCIA LABORAL </h3>
+                <ul>
+                    <li>
+                        <h4><input type="text" name="EMPRESA" size="50" placeholder="NOMBRE DE LA EMPRESA" required></h4>
+                        <p><input type="text" name="fechaTrabajo" size="50" placeholder="ingrese rango de fecha de trabajo" required></p>
+                        <p class="direccion"><input type="text" name="direccionTrabajo" size="50" placeholder="ingrese Direccion y localidad" required></p>
+                        
+                    </li>
+                    <li>
+                        <h5><input type="text" name="puesto" size="50" placeholder="puesto de trabajo" required></h5>
+                        <input type="textarea" name="descripcion" cols="30" row="4" placeholder="ingrese descripcion de tareas que realizaba" required>
+                       
+                    </li>
+                   
+            </div>
+    
+    
+            </section>
+    
+    
+            <section>
+                <h3 class="titulos">CONOCIMIENTOS </h3>
+                <article>
+                    <p>100%</p>
+                </article>
+    
+                <article>
+                    <ul>
+                        <li><input type="text" name="conocimiento" size="50" placeholder="ingrese conocimiento ej. ingles" required></li>
+                       
+                    </ul>
+    
+    
+                </article>
+           
+               
+            </section>
+            <aside>
+                <h3>EDUCACION</h3>
+                <ul>
+                    <li>
+                        <h5><input type="text" name="instituto" size="50" placeholder="nombre del instituto" required></h5>
+                        <p><input type="text" name="fechaEstudio" size="50" placeholder="ingrese rango de fecha en el que realizo" required></p>
+                        <p class="direccion"><input type="text" name="direccionEstudio" size="50" placeholder="ingrese Direccion del instituto" required></p>
+                        
+                    </li>
+                    
+                   
+                </ul>
+                <h3>IDIOMA</h3>
+                <p> <input type="text" name="idioma" size="50" placeholder="nombre del IDIOMA" required></p>
+            </aside>
+    
+    
+    
+    
+        </main>
+
+        <footer>
+            <input type="submit" value="realizar ">
+        </footer>
+    
+        
+   
+    
+</body>
+</html>
